@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <h2>Skill:</h2>
+    <p>{{ skills[0] }}</p>
+    <h2>Experience:</h2>
+    <p>{{ experiences[0] }}</p>
+    <h2>Certificate:</h2>
+    <p>{{ certificates[0] }}</p>
+    <h2>Contact:</h2>
+    <p>{{ contacts[0] }}</p>
+    <br>
+    <a href="{{ url_for('download_excel') }}">Download as Excel</a>
+    <br>
+    <a href="{{ url_for('download_image') }}">Download as Image of table</a>
+</body>
+</html>
